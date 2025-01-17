@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGL Drawing App</title>
+  <style>
+    canvas {
+      border: 1px solid black;
+      cursor: crosshair;
+    }
+    button, input {
+      margin: 5px;
+    }
+    #scaleLabel {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+<canvas id="webglCanvas" width="800" height="600"></canvas>
+<div>
+  <button id="drawButton">Draw</button>
+  <input type="color" id="colorPicker" value="#000000">
+  <button id="moveUpButton">Up</button>
+  <button id="moveDownButton">Down</button>
+  <button id="moveLeftButton">Left</button>
+  <button id="moveRightButton">Right</button>
+  <button id="rotateClockwiseButton">Clockwise</button>
+  <button id="rotateCounterClockwiseButton">Counterclockwise</button>
+  <label id="scaleLabel">Scale</label>
+  <input type="range" id="scaleSlider" min="0.5" max="2.0" step="0.1" value="1.0">
+  <button id="fillButton">Fill</button>
+  <button id="clearButton">Clear</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
